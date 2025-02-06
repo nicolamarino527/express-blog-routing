@@ -18,6 +18,38 @@
 
 // import express
 const express = require('express')
-const router = express.router()
+const router = express.Router();
 
+// rotte crud
 
+// index
+router.get('/', function (req, res){
+    res.send('lista dei posts');
+});
+
+// show
+router.get('/:id', function (req, res){
+    res.send('lista dei posts' + req.params.id);
+});
+
+// store
+router.post('/', function (req, res){
+    res.send('lista dei posts');
+});
+
+// update
+router.put('/:id', function (req, res){
+    res.send('lista dei posts' + req.params.id);
+});
+// modify
+router.patch('/:id', function (req, res){
+    res.send('lista dei posts' + req.params.id);
+});
+// destroy
+router.delete('/:id', function (req, res){
+    res.send('lista dei posts' + req.params.id);
+});
+
+// esportiamo il modulo 
+
+module.exports = router;
