@@ -24,30 +24,30 @@ const router = express.Router();
 
 // index
 router.get('/', function (req, res){
-    res.send('lista dei posts');
+    res.send('Lista dei posts');
 });
 
 // show
 router.get('/:id', function (req, res){
-    res.send('lista dei posts' + req.params.id);
+    res.send('Post' + req.params.id);
 });
 
 // store
 router.post('/', function (req, res){
-    res.send('lista dei posts');
+    res.send('Creazione nuovo post');
 });
 
 // update
 router.put('/:id', function (req, res){
-    res.send('lista dei posts' + req.params.id);
+    res.send('Modifica del post' + req.params.id);
 });
 // modify
 router.patch('/:id', function (req, res){
-    res.send('lista dei posts' + req.params.id);
+    res.send('Patch del post' + req.params.id);
 });
 // destroy
 router.delete('/:id', function (req, res){
-    res.send('lista dei posts' + req.params.id);
+    res.send('Elimina post' + req.params.id);
 });
 
 // esportiamo il modulo 
