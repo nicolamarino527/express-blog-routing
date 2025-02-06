@@ -4,7 +4,9 @@
   "description": "routing",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node start app.js",
+    "watch": "node --watch app.js"
   },
   "repository": {
     "type": "git",

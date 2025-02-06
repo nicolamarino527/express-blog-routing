@@ -1,18 +1,58 @@
-// Esercizio
-// Creare un file di routing (routers/posts.js) che conterrà le rotte necessario per l’entità post.
-// All’interno creare le rotte per le operazioni CRUD (Index, Show, Create, Update e Delete)
-// Tutte le risposte saranno dei testi che confermeranno l’operazione che il server deve eseguire, 
-// secondo le convenzioni REST.
-// Ad esempio:
-// Se viene chiamata /posts col verbo GET ci aspettiamo “Lista dei post”;
-// Se viene chiamato /posts/1 col verbo DELETE ci aspettiamo “Cancellazione del post 1"
-// e via dicendo…
-// Registrare il router dentro app.js con il prefisso posts/.
-// Nota:
-// Avete anche l’array dei post che vi abbiamo fornito, salvatelo da qualche parte. Ci servirà per 
-// i prossimi step. Per oggi vi può servire in caso vogliate provare i bonus.
-// Bonus
-// Provare a restituire la lista dei post dalla rotta index, in formato json
-// Provare a restituire un singolo post dalla rotta show, sempre in formato json
 
+
+// // express
+// // import express from 'express';
+// const express = require('express');
+// const app = express();
+// const port = 3000;
+
+// app.use(express.static('public'));
+
+// // aggiungiamo la rotta home
+// app.get('/',(req,res) => {
+//     res.send('home')
+// });
+
+// // aggiungiamo rotta del blog
+// app.get('/bacheca', (req, res)=> {
+//     // array dei posts
+//     const bacheca = [
+//         {
+//           "titolo": "Ciambellone soffice",
+//           "contenuto": "Un dolce semplice e genuino, perfetto per la colazione o la merenda. Soffice e profumato, con una leggera spolverata di zucchero a velo.",
+//           "immagine": "http://localhost:3000/img/ciambellone.jpeg", 
+//           "tags": ["dolce", "colazione", "merenda", "tradizione"]
+//         },
+//         {
+//           "titolo": "Cracker di barbabietola",
+//           "contenuto": "Sfiziosi cracker croccanti a base di barbabietola, arricchiti con semi misti. Perfetti come snack o da accompagnare con creme e formaggi.",
+//           "immagine": "http://localhost:3000/img/barbabietola.jpeg",
+//           "tags": ["salato", "snack", "barbabietola", "healthy"]
+//         },
+//         {
+//           "titolo": "Pasta alla barbabietola",
+//           "contenuto": "Un primo piatto colorato e dal sapore delicato. La crema di barbabietola si sposa perfettamente con la pasta e la croccantezza della granella di pistacchio.",
+//           "immagine": "http://localhost:3000/img/pasta_barbabietola.jpeg",
+//           "tags": ["primo", "barbabietola", "pasta", "vegetariano"]
+//         },
+//         {
+//           "titolo": "Torta paesana",
+//           "contenuto": "Un dolce della tradizione lombarda, preparato con pane raffermo, latte, cacao, pinoli e uvetta. Un dessert ricco e goloso.",
+//           "immagine": "http://localhost:3000/img/torta_paesana.jpeg",
+//           "tags": ["dolce", "tradizione", "cacao", "riciclo"]
+//         },
+//         {
+//             "titolo": "Pane fritto",
+//             "contenuto": "Alla fine è pane, pero è fritto.",
+//             "immagine": "http://localhost:3000/img/pane_fritto_dolce.jpeg",
+//             "tags": ["pane", "buono", "buonissimo",]
+//           }
+//       ]
+//     // ritorniamo l array in json
+//     res.json(bacheca);
+// })
+
+// app.listen(port, () => {
+//     console.log(`server in ascolto su ${port}`);
+// })
 
